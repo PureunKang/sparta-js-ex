@@ -3,10 +3,8 @@
 
 function confirmReservation(user) {
   // 여기에 user 객체를 구조 분해 할당 하세요.
-  const name = user.name;
-  const roomType = user.roomType;
-  const firstDate = user.date;
-  return `${name} 고객님의 ${roomType}룸 입실날짜는 ${firstDate} 입니다.`;
+  const { name, roomType, date } = user;
+  return `${name} 고객님의 ${roomType}룸 입실날짜는 ${date} 입니다.`;
 }
 
 const userInfo = {

@@ -21,6 +21,7 @@ function handleEdit(id, editingObj) {
   // 배열 요소를 찾을 때 배열의 find 또는 findIndex 메소드를 사용해 보세요.
   // Object.assign 을 사용해서 객체의 내용을 수정해 보세요.
   // 여기에 코드를 작성하세요.
+  const targetObj = db.find((n) => n.id === 10);
 }
 
 handleEdit(10, { name: "Paul", age: 35 });
